@@ -1,10 +1,9 @@
 import { trpc } from '@/lib/trpc';
 import { FC, Fragment } from 'react';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-import { Label } from './ui/label';
 
 export const Profile: FC = () => {
-    const { data: profiles, isLoading, isError } = trpc.profile.getProfile.useQuery(); // TODO: fix the error
+    const { data: profiles, isLoading, isError } = trpc.profile.getProfile.useQuery();
 
     return (
         <div className="space-y-8 max-w-md w-full border rounded-md px-8 py-10">
