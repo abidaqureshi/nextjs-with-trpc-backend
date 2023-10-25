@@ -1,3 +1,12 @@
+# Pre-requisite
+
+- Use npm 8.3.1
+- Use node 16.14.0
+
+# Installation
+
+- npm install
+
 # Assignment
 
 - Clone this repository
